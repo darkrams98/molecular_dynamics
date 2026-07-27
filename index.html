@@ -16,6 +16,11 @@
    P amber = commands / do this    O red = pitfalls
    N blue  = concepts / notes      S yellow = tips
    ============================================================ */
+   .brand-mark {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
 :root{
   --p:#ff9f45; --n:#5b8dff; --o:#ff6b6b; --s:#ffd166; --c:#98a2b3;
   --accent:var(--p);
@@ -349,13 +354,12 @@ mark{background:var(--sel);color:inherit;border-radius:2px;padding:0 .1em}
 <!-- ================= SIDEBAR ================= -->
 <aside class="rail" id="rail">
   <div class="brand">
-    <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-      <rect x="4.5" y="4.5" width="31" height="31" rx="4" fill="none" stroke="var(--line-2)" stroke-dasharray="3 3"/>
-      <path d="M8 27 C14 9, 22 33, 32 13" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/>
-      <circle cx="32" cy="13" r="3.4" fill="var(--accent)"/>
-      <circle cx="8" cy="27" r="2" fill="var(--n)"/>
-      <circle cx="19.5" cy="21" r="2" fill="var(--c)"/>
-    </svg>
+<img
+    class="brand-mark"
+    src="images/geniran-logo.png"
+    alt="GENIRAN Logo"
+    width="40"
+    height="40">
     <div class="brand-txt">
       <div class="brand-name">The Integrator</div>
       <div class="brand-sub">MD &amp; GROMACS field guide</div>
